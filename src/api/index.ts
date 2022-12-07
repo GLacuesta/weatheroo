@@ -11,7 +11,7 @@ interface ApiConfig {
 
 export interface IAPIRequestError {
   error: string;
-  message: string;
+  message?: string;
   status?: number;
   redirect?: string;
   raw?: object;
@@ -45,7 +45,7 @@ const handleReturnError = (err: AxiosError): Promise<never> =>
     status: _get(err, 'response.status'),
     redirect: _get(err, 'response.data.redirect'),
     raw: _get(err, 'response.data') || err,
-  } as IAPIRequestError);
+  } as any);
 
 
 /* 
