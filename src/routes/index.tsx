@@ -10,7 +10,7 @@ const RoutesHOC = () => {
     <Layout>
       <Routes>
         <Route path="/NotFound" element={<NotFound />} />
-        <Route path="/" element={<Weather />} />
+        <Route path="/weatheroo" element={<Weather />} />
         <Route path="/*" element={<Navigate to="/NotFound" replace />} />
       </Routes>
     </Layout>

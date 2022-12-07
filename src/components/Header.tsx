@@ -10,7 +10,7 @@ const Header = () => {
       <nav className="flex justify-center mx-auto" />
       {pathname !== '/' && (
         <div className="cursor-pointer p-2 mr-4 border border-[#34558B] rounded-lg">
-          <button onClick={() => navigate('/', { replace: true })}>
+          <button onClick={() => navigate('/weatheroo', { replace: true })}>
             Back
           </button>
         </div>
